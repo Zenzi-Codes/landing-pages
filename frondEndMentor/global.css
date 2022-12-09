@@ -1,0 +1,80 @@
+:root {
+
+    /* Primary Colours */
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+
+    /*Neutral Colours*/
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%); 
+}
+
+/*Font Sizes*/
+
+.fs-small { font-size: 0.825rem;} /*14px*/
+.fs-medium { font-size: 1.125rem;} /*18px*/
+.fs-large { font-size: 1.25rem;} /*20px*/
+.fs-x-large { font-size: 3.25rem;} /*52px*/
+
+/* Font Weights*/
+
+.fw-300 { font-weight: 300;}
+.fw-400 { font-weight: 400;}
+.fw-700 { font-weight: 700;}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    color: var(--grayish-blue);
+    line-height: 1.3;
+
+  /*  @include breakpoint-up(large) {
+        font-size: $font-med;
+    }
+
+    &.no-scroll {
+        overflow: hidden;
+    }*/
+}
+
+.page-pad {
+    padding: 0 1.5rem;
+}
+
+h1, h2, h3 {
+    margin-top: 0px;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.jc-spc-btwn {
+    justify-content: space-between;
+}
+
+.jc-cntr {
+    justify-content: center;
+}
+
+.ai-cntr {
+    align-items: center;
+}
